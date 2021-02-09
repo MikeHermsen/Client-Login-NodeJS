@@ -1,0 +1,48 @@
+<%# views/base.ejs %>
+
+<% extend('base') %>
+
+
+<div class="cover-page">
+
+    <div class="mid-form mid-form-login">
+
+        <form id="form_login">
+
+            <div> 
+                <i class="fa fa-user fa-lg"></i> 
+                <input type="text", id="username" name="username" placeholder="Username"
+                    minlength="6"
+                    maxlength="20"
+                    required>
+            </div>
+
+            <div>    
+                <i class="fa fa-globe fa-lg"></i> 
+                <select id="domain" name="domain">
+                    <!-- Jquery will complete this field -->
+                </select>
+
+            </div>
+            
+            <div>
+                <i class="fa fa-lock fa-lg"></i> 
+                <input type="password", id="password" name="password" placeholder="Password"
+                    minlength="12"
+                    maxlength="128"
+                    required>
+            </div>
+            
+            <button type="submit">Login</button> 
+
+            <p>Don't have an account yet? Create one with <a href="/register">Register</a></p>
+        
+        </form>
+
+        <div id="on_error">
+            
+        </div>
+
+    </div>
+
+</div>

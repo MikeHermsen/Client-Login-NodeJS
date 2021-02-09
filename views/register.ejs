@@ -1,0 +1,66 @@
+<%# views/base.ejs %>
+
+<% extend('base') %>
+
+
+<div class="cover-page">
+
+    <div class="mid-form mid-form-register">
+
+        <form id="form_register">
+
+
+            <div> 
+                <i class="fa fa-user-circle fa-lg"></i> 
+                <input type="text", id="full_name" name="full_name" placeholder="Full Name"
+                    minlength="4"
+                    maxlength="44"
+                    required>
+            </div>    
+
+            <div> 
+                <i class="fa fa-user fa-lg"></i> 
+                <input type="text", id="username" name="username" placeholder="Username"
+                    minlength="6"
+                    maxlength="20"
+                    required>
+            </div>
+
+            <div>    
+                <i class="fa fa-globe fa-lg"></i> 
+
+                <select id="domain" name="domain">
+                    <!-- Jquery will complete this field -->
+                </select>
+
+            </div>
+            
+            <div>
+                <i class="fa fa-lock fa-lg"></i> 
+                <input type="password", id="password" name="password" placeholder="Password"
+                    minlength="12"
+                    maxlength="128"
+                    required>
+            </div>
+            
+            <div>
+                <i class="fa fa-calendar fa-lg"></i> 
+                <input type="date", id="birth_date" name="birth_date" placeholder="Birth Date"
+                    min="1920-01-01"
+                    value="2000-01-01"
+                    required>
+            </div>
+
+            <button type="submit">Register</button> 
+
+            <p>Have an account already? Try <a href="/login">Login</a></p>
+        
+        </form>
+
+        <div id="on_error">
+            
+        </div>
+
+    </div>
+
+</div>
