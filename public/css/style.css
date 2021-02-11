@@ -110,3 +110,14 @@ form > p
     width: 100%;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 750px) /* This will prefent the page from disrubting when going under 750px width */
+{
+
+  .mid-form
+  {
+      width: 80%;
+      margin: 20vh 0 0 10%;
+  }
+}
